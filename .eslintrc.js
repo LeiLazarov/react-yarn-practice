@@ -20,10 +20,15 @@ module.exports = {
     rules: {
         semi: [2, 'always'],
         quotes: ['error', 'single'],
+        'key-spacing': ['error', {
+            beforeColon: false,
+            afterColon: true
+        }],
         indent: ['error', 4],
-        eqeqeq: [
-            'error',
-            'smart'
-        ],
+        curly: ['error', 'multi'],
+        'object-curly-spacing': ['error', 'always'],
+        eqeqeq: ['error', 'smart'],
+        'no-unused-vars': 'error',
+        'prefer-const': 'error'
     }
 };
